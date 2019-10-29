@@ -1,0 +1,12 @@
+{
+  "name": "reconjs",
+  "version": "1.0.0",
+  "description": "Simple tool for pulling configuration from remote machines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Brad 'adigitalmonk' Boudreau",
+  "license": "MIT"
+}
