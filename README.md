@@ -14,6 +14,25 @@ There are four configuration options, these can be passed in either via an objec
 | RECON_AUTH_TOKEN | A token to add the authorization header. | "" |
 | SKIP_EXISTING | Whether or not to skip existing variables if they already exist in the environment. | `false` |
 
+The remote host should return a payload that `application/json`, the key/value pairs become the new environment variables and their results.
+
+E.g., a response like this
+
+```json
+{
+    "server": "8.8.8.8",
+    "port": 80
+}
+```
+
+will create
+
+```javascript
+process.env.SERVER // "8.8.8.8"
+process.env.PORT // 80
+```
+
+
 ## Usage
 
 ```javascript
